@@ -224,7 +224,7 @@ void step() {
     for (size_t actID=0, actLen = actList.size(); actID<actLen; ++actID) { 
         Adx actstate = actList[actID];
         State* stateaddr = &*actstate;
-        if (state.movements.size()) actList[actDst++] = actList[actID];
+        if (state.movements.size()) actList[actDst++] = actList[actID]; else continue;
         for (auto &i: state.movements) {
             state.val[i.pos] = i.val;
         }

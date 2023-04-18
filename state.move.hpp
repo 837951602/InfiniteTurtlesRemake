@@ -40,6 +40,13 @@ case8 (BeltNE_WS)
     if (state.val[W] != EMPTY && state.val[S] == EMPTY) {
         move (W, S);
     }
+case8 (BeltWN_ES)
+    if (state.val[W] != EMPTY && state.val[N] == EMPTY) {
+        move (W, N);
+    }
+    if (state.val[E] != EMPTY && state.val[S] == EMPTY) {
+        move (E, S);
+    }
 case8 (BeltWNE)
     if (state.val[E] == EMPTY) {
         if (state.val[W] != EMPTY) move (W, E); else

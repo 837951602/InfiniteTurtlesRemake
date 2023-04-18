@@ -21,6 +21,7 @@ typedef unsigned char Tile;
 const Tile BeltWE = 0;
 const Tile BeltWE_NS = 4;
 const Tile BeltNE_WS = 8;
+const Tile BeltWN_ES = 128;
 const Tile TransIncr = 120;
 const Tile TransDecr = 16;
 const Tile TransNul = 20;
